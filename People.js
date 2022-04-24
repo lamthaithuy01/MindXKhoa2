@@ -67,11 +67,11 @@ console.log('First_Name : ',Npeople)
 let pFullname = p.map(item =>({full_name : item.first_name +  item.last_name, gender : item.gender}))
 console.log('Full name :',pFullname)
 // dùng filter
-let pFilter = p.filter(item => item.id > 5)
-console.log('id>5 : ', pFilter)
+let pFilter1 = p.filter1(item => item.id > 5)
+console.log('id>5 : ', pFilter1)
 
-let pFiltersecond = p.filter(item => item.id < 5 && item.gender == "Male")
-console.log('id<5 và nam : ',pFiltersecond)
+let pFilter2 = p.filter(item => item.id < 5 && item.gender == "Male")
+console.log('id<5 và nam : ',pFilter2)
 // dùng find
 let pFind = p.find(item =>item.id == 10)
 console.log('id<10 : ', pFind)
